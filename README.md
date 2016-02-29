@@ -17,4 +17,13 @@ Create one R script called run_analysis.R that does the following:
  * The referenced zip file has been downloaded and unziped into a subdirectory "/UCI HAR Dataset/"
  * This can be accomplished outside of the "R" environment using common systems utility programs.
 
+## Data:
+ * CodeBook.MD - provides a detailed description of the files and processes involved.
+ * run_analysis.R - an R script that performs the indicated analysis and produces a new file "tidydataset.txt" 
+ * UCI HAR Dataset - a subdirectory extracted from the source zip file referenced above
+ * tidydataset.txt - new independent data set produced by "run_analysis.R" aggregated by activity and subject.
+ 
+ * Note: "run_analysis.R" contains no function definitions, and must be "sourced" (source("run_analysis.R") in order to execute the script.
+ 
+
 
