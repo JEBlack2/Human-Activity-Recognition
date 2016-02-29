@@ -23,7 +23,7 @@ Create one R script called run_analysis.R that does the following:
  * UCI HAR Dataset - a subdirectory extracted from the source zip file referenced above
  * tidydataset.txt - new independent data set produced by "run_analysis.R" aggregated by activity and subject.
  
- * Note: "run_analysis.R" contains no function definitions, and must be "sourced" (source("run_analysis.R") in order to execute the script.
+ * Note: "run_analysis.R" contains no function definitions, and must be "sourced" (source("run_analysis.R")) in order to execute the script.
  
 
 
