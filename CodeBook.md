@@ -1,7 +1,7 @@
 
 # CodeBook.md 
-# Assignment: Getting and Cleaning Data Course; Week 04 Project
 
+ * Assignment: Getting and Cleaning Data Course; Week 04 Project
 
 ## Purpose:
 
@@ -49,13 +49,13 @@ Create one R script called run_analysis.R that does the following:
 
    * >dpath <- file.path(getwd(), "UCI HAR Dataset")
    * > dpath
-     [1] "C:/JEB/educat/2015.DataScience/2016.02.GettingAndCleaningData/2016.02.GettingAndCleaningData.Week04/UCI HAR Dataset"
+   * > [1] "C:/JEB/educat/2015.DataScience/2016.02.GettingAndCleaningData/2016.02.GettingAndCleaningData.Week04/UCI HAR Dataset"
 
 ### First Level:
 
    * > list.files(dpath)
-     [1] "activity_labels.txt" "features.txt"        "features_info.txt"   "README.txt"         
-     [5] "test"                "train"              
+   * > [1] "activity_labels.txt" "features.txt"        "features_info.txt"   "README.txt"         
+   * > [5] "test"                "train"              
 
 "test" and "train" are subdirectories containing the data under consideration.
 
