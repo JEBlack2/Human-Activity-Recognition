@@ -21,7 +21,7 @@ Create one R script called run_analysis.R that does the following:
  * CodeBook.MD - provides a detailed description of the files and processes and transformations involved.
  * run_analysis.R - an R script that performs the indicated analysis and transformations and then produces a new file "tidydataset.txt" 
  * UCI HAR Dataset - a subdirectory extracted from the source zip file referenced above, and residing on the local computer.
- * tidydataset.txt - new independent data set produced by "run_analysis.R" aggregated by activity and subject.
+ * tidydataset.txt - new independent tab-delimited data set produced by "run_analysis.R" aggregated by activity and subject.
  
  * Note: "run_analysis.R" contains no function definitions, and must be "sourced" (source("run_analysis.R")) in order to execute the script.
  
