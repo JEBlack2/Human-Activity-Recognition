@@ -78,6 +78,21 @@ names(features) <- feature_names[[2]]
 
 hadata <- cbind(activities, subjects, features)
 
+# coerce the activity codes to be character instead of integer
+
+hadata$activity <- as.character(hadata$activity)
+
+# apply the activity names from the meta data
+
+for (aCode in 1:length(activity_labels[,2])) {
+  hadata$activity[hadata$activity == aCode] <- as.character(activity_labels[aCode,2])
+  }
+
+# and make the activities factors
+
+hadata$activity <- as.factor(hadata$activity)
+
+
 # Extract the measurements on the mean and standard deviation for each measurement
 # I understand this to subset the combined human activity table (hadata),
 # such that only the columns involving a mean or a standard deviation remain for each observation.
@@ -89,6 +104,7 @@ selectedFeatures <- feature_names$V2[grep("[Mm][Ee][Aa][Nn]|[Ss][Tt][Dd]",featur
 # Make a list of all the columns we want to keep in our data.
 
 selectedColumns <-c("activity", "subject", as.character(selectedFeatures))
+
 
 # Subset the human activity data according to the selected columns list.
 
