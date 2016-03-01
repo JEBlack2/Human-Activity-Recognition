@@ -423,8 +423,21 @@ Next, give the variables better names:
 
 The next step is to combine them into a single "human activity" table (10299 x 58):
 
-   * hadata <- cbind(activities, subjects, features)
+   * > hadata <- cbind(activities, subjects, features)
 
+#### Apply the activity names to the codes 
+
+Coerce the activity codes to be character instead of integer.
+
+  * > hadata$activity <- as.character(hadata$activity)
+
+Then apply the activity names from the meta data.
+
+  * > for (aCode in 1:length(activity_labels[,2])) {hadata$activity[hadata$activity == aCode] <- as.character(activity_labels[aCode,2])}
+
+And make the activities factors:
+
+  * > hadata$activity <- as.factor(hadata$activity)
 
 ### Extract the measurements on the mean and standard deviation for each measurement
 
